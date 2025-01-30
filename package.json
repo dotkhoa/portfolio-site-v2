@@ -9,9 +9,9 @@
     "lint": "next lint",
     "build:worker": "cloudflare",
     "dev:worker": "wrangler dev --port 8771",
-    "preview:worker": "npm run build:worker && npm run dev:worker",
-    "deploy:worker": "npm run build:worker && wrangler deploy",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "preview:worker": "pnpm run build:worker && pnpm run dev:worker",
+    "deploy:worker": "pnpm run build:worker && wrangler deploy",
+    "pages:build": "pnpm dlx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "next": "15.0.3",
