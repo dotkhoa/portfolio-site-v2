@@ -1,28 +1,32 @@
 export const runtime = "edge";
 
+import Image from "next/image";
 import * as motion from "motion/react-client"
-import NavBar from "./navbar"
 
 export default function MainPage() {
    return (
       <div>
-         <NavBar/>
          <motion.div
             className="box"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
          >
             <div className="flex justify-between items-center w-full max-w-screen-md px-4 mx-auto flex-col gap-8 row-start-2 text-xl">
-                <div>
-                    {`Hello. 👋 I am a Software Engineer.
-                My interest in software development started back in 2019 when I was a freshman in college.
-                I enjoy creating things that live on the internet. I take pleasure in learning about new technologies and building things.`}
+                <div className={"self-start"}>
+                    {`Hello. 👋 I am a Software Developer.
+                I enjoy learning and building things. I take pleasure in learning about new technologies.`}
                 </div>
-                <div>
-                    {` I\'ve had the amazing opportunity to work at a start-up, StaffWise, where I was able to work on a web application that allows hospitals 
-                    to manage their employees and schedules.`}
+                <div className={"self-start"}>
+                    {`My current interest is in building applications that are useful and intuitive to use.`}
                 </div>
+                <Image
+                    src={"/ProfilePic.png"}
+                    alt={"Profile Picture"}
+                    width={300}
+                    height={300}
+                    className={""}
+                />
             </div>
         </motion.div>
      </div>
