@@ -1,15 +1,14 @@
 @import 'tailwindcss';
 
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
 @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 [data-theme='dark'] {
@@ -18,7 +17,16 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: sans-serif, Arial, Helvetica;
+}
+
+:root {
+  --radius: 0.6rem;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
