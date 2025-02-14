@@ -16,7 +16,7 @@ export default function Footer() {
             <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
                 {resolvedTheme === "dark" ? <Moon/> : <Sun/>}
             </Button>
-            <div className={"justify-items-end"}>
+            <div className={"grid justify-items-end"}>
                 <div className={"flex"}>
                     <div className={"pr-1"}>{"Email –"}</div>
                     <a className={"underline text-stone-400 hover:text-stone-950 dark:hover:text-white"} href={"mailto:khoadinh2k@gmail.com"} target={"_blank"} rel={"noopener noreferrer"}>
