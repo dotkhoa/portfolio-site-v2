@@ -12,11 +12,23 @@ export default function Footer() {
     }
 
     return (
-        <div className={"flex justify-between items-center w-full max-w-screen-md px-4 mx-auto text-2xl"}>
-            <div className={"font-light"}>
-                <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
-                    {resolvedTheme === "dark" ? <Moon/> : <Sun/>}
-                </Button>
+        <div className={"flex justify-between items-center w-full max-w-screen-md px-4 mx-auto"}>
+            <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
+                {resolvedTheme === "dark" ? <Moon/> : <Sun/>}
+            </Button>
+            <div className={"justify-items-end"}>
+                <div className={"flex"}>
+                    <div className={"pr-1"}>{"Email –"}</div>
+                    <a className={"underline text-stone-400 hover:text-stone-950 dark:hover:text-white"} href={"mailto:khoadinh2k@gmail.com"} target={"_blank"} rel={"noopener noreferrer"}>
+                        {"khoadinh2k@gmail.com"}
+                    </a>
+                </div>
+                <div className={"flex"}>
+                    <div className={"pr-1"}>{"GitHub –"}</div>
+                    <a className={"underline text-stone-400 hover:text-stone-950 dark:hover:text-white"} href={"https://github.com/dotkhoa"} target={"_blank"} rel={"noopener noreferrer"}>
+                        {"@dotkhoa"}
+                    </a>
+                </div>
             </div>
         </div>
     );
