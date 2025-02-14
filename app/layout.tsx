@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import NavBar from "@/app/navbar";
-import Footer from "@/app/footer"
+import NavBar from "@/components/navbar";
+import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Khoa Dinh",
