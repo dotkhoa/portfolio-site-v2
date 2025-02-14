@@ -16,6 +16,10 @@
   --foreground: #ffffff;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: sans-serif, Arial, Helvetica;
   background-color: var(--background);
