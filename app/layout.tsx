@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import NavBar from "@/components/navbar";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Khoa Dinh",
@@ -16,17 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning={true} lang="en">
-      <body className="flex flex-col min-h-screen sm:py-16 md:py-20 lg:py-32">
+      <body className="flex min-h-screen flex-col sm:py-16 md:py-20 lg:py-32">
         <ThemeProvider
-            attribute={"data-theme"}
-            defaultTheme={"system"}
-            enableSystem={true}
+          attribute={"data-theme"}
+          defaultTheme={"system"}
+          enableSystem={true}
         >
-          <NavBar/>
-            <div className={"flex-grow"}>
-              {children}
-            </div>
-          <Footer/>
+          <NavBar />
+          <div className={"flex-grow"}>{children}</div>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

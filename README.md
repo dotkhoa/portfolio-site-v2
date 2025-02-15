@@ -17,13 +17,13 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev 
+pnpm dev
 ```
 
 ## Commands
 
-| Command                 | Description |
-|-------------------------|-------------|
+| Command         | Description                     |
+| --------------- | ------------------------------- |
 | `npm run build` | Runs the production environment |
-| `npm run dev` | Runs the dev environment |
-| `npm run lint` | Runs linting |
+| `npm run dev`   | Runs the dev environment        |
+| `npm run lint`  | Runs linting                    |

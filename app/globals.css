@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-animate';
 
@@ -11,7 +11,7 @@
   --color-foreground: var(--foreground);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background: #171717;
   --foreground: #ffffff;
 }
