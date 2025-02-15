@@ -12,7 +12,7 @@ export default function Footer() {
     }
 
     return (
-        <div className={"flex justify-between items-center w-full max-w-screen-md px-4 mx-auto"}>
+        <div className={"flex justify-between items-center w-full max-w-screen-md mt-20 px-4 mx-auto"}>
             <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
                 {resolvedTheme === "dark" ? <Moon/> : <Sun/>}
             </Button>

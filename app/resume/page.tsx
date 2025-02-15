@@ -1,6 +1,13 @@
 export const runtime = "edge";
 
 import * as motion from "motion/react-client"
+import type {Metadata} from "next";
+
+
+export const metadata: Metadata = {
+    title: "Khoa Dinh – Resume",
+    description: "Khoa's Resume.",
+};
 
 export default function Resume() {
     return (
