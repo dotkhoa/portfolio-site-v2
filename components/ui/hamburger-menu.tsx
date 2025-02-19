@@ -20,7 +20,7 @@ export default function HamburgerMenu() {
         <DropdownMenuTrigger asChild>
           <Button variant="outline">{<Menu />}</Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-32">
+        <DropdownMenuContent className="w-48">
           <DropdownMenuGroup>
             <DropdownMenuItem onSelect={() => router.push("/projects")}>
               Projects
