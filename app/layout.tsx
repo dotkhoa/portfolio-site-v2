@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning={true} lang="en">
-      <body className="flex min-h-screen flex-col sm:py-16 md:py-20 lg:py-32">
+      <body className="flex min-h-screen flex-col py-10 sm:py-16 md:py-20 lg:py-32">
         <ThemeProvider
           attribute={"data-theme"}
           defaultTheme={"system"}

@@ -35,3 +35,8 @@ body {
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+
+html body[data-scroll-locked] {
+  margin-right: 0 !important;
+  padding-top: calc(var(--spacing) * 10) !important;
+}
