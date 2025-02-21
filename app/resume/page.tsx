@@ -106,7 +106,7 @@ export default function Resume() {
           <div>
             <h2 className={"mt-10 mb-4 text-xl font-semibold"}>Education</h2>
             <div className={"flex justify-between"}>
-              <p>Wichita State Univeristy</p>
+              <p>Wichita State University</p>
               <p className={"text-stone-500 dark:text-stone-300"}>
                 2019 – 2023
               </p>
