@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <div
       className={
-        "mx-auto mt-20 flex w-full max-w-screen-md items-center justify-between px-4"
+        "mx-auto mt-10 flex w-full max-w-screen-md items-center justify-between px-4"
       }
     >
       <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
@@ -25,7 +25,7 @@ export default function Footer() {
           <div className={"pr-1"}>{"Email –"}</div>
           <a
             className={
-              "text-stone-400 underline hover:text-stone-950 dark:hover:text-white"
+              "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
             }
             href={"mailto:khoadinh2k@gmail.com"}
             target={"_blank"}
@@ -38,7 +38,7 @@ export default function Footer() {
           <div className={"pr-1"}>{"GitHub –"}</div>
           <a
             className={
-              "text-stone-400 underline hover:text-stone-950 dark:hover:text-white"
+              "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
             }
             href={"https://github.com/dotkhoa"}
             target={"_blank"}
