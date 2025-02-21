@@ -25,6 +25,7 @@ export default function MainPage() {
             alt={"Profile Picture"}
             width={300}
             height={300}
+            priority={true}
             className={""}
           />
         </div>
