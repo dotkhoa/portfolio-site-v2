@@ -14,10 +14,12 @@ export default function NavBar() {
       }
     >
       <div className={"flex"}>
-        <div
+        <p
           className={"cursor-pointer pr-1 font-bold"}
           onClick={() => router.push("/")}
-        >{`Khoa Dinh `}</div>
+        >
+          Khoa Dinh{" "}
+        </p>
         <div className={"font-light"}>{`— ${currentRoute}`}</div>
       </div>
       <div className={"font-light"}>
@@ -26,13 +28,13 @@ export default function NavBar() {
             className={`${currentRoute === "/projects" ? "" : "text-stone-400"} cursor-pointer pr-2 hover:text-stone-950 dark:hover:text-white`}
             onClick={() => router.push("/projects")}
           >
-            {"projects"}
+            projects
           </button>
           <button
             className={`${currentRoute === "/resume" ? "" : "text-stone-400"} cursor-pointer hover:text-stone-950 dark:hover:text-white`}
             onClick={() => router.push("/resume")}
           >
-            {"resume"}
+            resume
           </button>
         </div>
         <div className={"block sm:hidden"}>

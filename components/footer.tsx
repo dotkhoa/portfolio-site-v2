@@ -22,7 +22,7 @@ export default function Footer() {
       </Button>
       <div className={"grid justify-items-end"}>
         <div className={"flex"}>
-          <div className={"pr-1"}>{"Email –"}</div>
+          <div className={"pr-1"}>Email –</div>
           <a
             className={
               "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
@@ -31,11 +31,11 @@ export default function Footer() {
             target={"_blank"}
             rel={"noopener noreferrer"}
           >
-            {"khoadinh2k@gmail.com"}
+            khoadinh2k@gmail.com
           </a>
         </div>
         <div className={"flex"}>
-          <div className={"pr-1"}>{"GitHub –"}</div>
+          <div className={"pr-1"}>GitHub –</div>
           <a
             className={
               "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
@@ -44,7 +44,7 @@ export default function Footer() {
             target={"_blank"}
             rel={"noopener noreferrer"}
           >
-            {"@dotkhoa"}
+            @dotkhoa
           </a>
         </div>
       </div>
