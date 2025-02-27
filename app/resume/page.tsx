@@ -25,7 +25,7 @@ export default function Resume() {
           <div>
             <h3 className={"text-lg"}>
               Frontend Software Developer at{" "}
-              <a
+              <Link
                 className={
                   "underline decoration-stone-400 underline-offset-2 hover:decoration-stone-950"
                 }
@@ -34,7 +34,7 @@ export default function Resume() {
                 rel={"noopener noreferrer"}
               >
                 StaffWiseLLC
-              </a>
+              </Link>
             </h3>
             <p className={"text-base font-light"}>
               July 2022 – December 2023{" "}
@@ -73,7 +73,7 @@ export default function Resume() {
           <div className={"mt-8"}>
             <h3 className={"text-lg"}>
               Research Assistant at{" "}
-              <a
+              <Link
                 className={
                   "underline decoration-stone-400 underline-offset-2 hover:decoration-stone-950"
                 }
@@ -82,7 +82,7 @@ export default function Resume() {
                 rel={"noopener noreferrer"}
               >
                 NIAR
-              </a>
+              </Link>
             </h3>
             <p className={"text-base font-light"}>
               February 2021 – November 2021{" "}

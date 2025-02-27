@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Footer() {
   const { setTheme, resolvedTheme } = useTheme();
@@ -23,7 +24,7 @@ export default function Footer() {
       <div className={"grid justify-items-end"}>
         <div className={"flex"}>
           <div className={"pr-1"}>Email –</div>
-          <a
+          <Link
             className={
               "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
             }
@@ -32,11 +33,11 @@ export default function Footer() {
             rel={"noopener noreferrer"}
           >
             khoadinh2k@gmail.com
-          </a>
+          </Link>
         </div>
         <div className={"flex"}>
           <div className={"pr-1"}>GitHub –</div>
-          <a
+          <Link
             className={
               "text-stone-400 underline underline-offset-2 hover:text-stone-950 dark:hover:text-white"
             }
@@ -45,7 +46,7 @@ export default function Footer() {
             rel={"noopener noreferrer"}
           >
             @dotkhoa
-          </a>
+          </Link>
         </div>
       </div>
     </div>
