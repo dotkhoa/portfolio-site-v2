@@ -20,7 +20,9 @@ export default function NavBar() {
         >
           Khoa Dinh{" "}
         </p>
-        <div className={"font-light"}>{`— ${currentRoute}`}</div>
+        {currentRoute !== "/" && (
+          <div className={"font-light"}>{`— ${currentRoute}`}</div>
+        )}
       </div>
       <div className={"font-light"}>
         <div className={"hidden sm:block"}>
