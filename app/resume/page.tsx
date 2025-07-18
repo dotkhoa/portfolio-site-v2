@@ -41,7 +41,6 @@ export default function Resume() {
               <span className={"px-0.5 text-stone-400"}>•</span> Remote
             </p>
             <div className={"mt-2"}>
-              {" "}
               <ul className={"list-disc pl-4 marker:text-stone-400"}>
                 <li>
                   Collaborated with engineers in a fast-paced environment to

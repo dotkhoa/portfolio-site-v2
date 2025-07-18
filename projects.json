@@ -1,0 +1,40 @@
+{
+  "projects": {
+    "morii": {
+      "name": "Morii",
+      "github_link": "https://github.com/dotkhoa/morii-app",
+      "project_link": "https://morii-app.vercel.app/",
+      "badges": [
+        "React",
+        "NextJs",
+        "TypeScript",
+        "TailwindCSS",
+        "Supabase",
+        "Zustand"
+      ],
+      "description": "Upload, browse, and delete images in a simple gallery powered by Supabase.",
+      "bullet_points": [
+        "Integrated OpenAI Moderation API to automatically screen uploaded images.",
+        "Centralized client-side state with Zustand for predictable data flow.",
+        "Leveraged Supabase Auth, Storage, and Postgres for secure user accounts and image handling.",
+        "Offloaded image resizing and moderation to Supabase Edge Functions."
+      ]
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "github_link": "https://github.com/dotkhoa/portfolio-site-v2",
+      "project_link": "",
+      "badges": ["React", "NextJs", "TypeScript", "TailwindCSS"],
+      "description": "A personal portfolio website designed to showcase my projects, skills, and professional work.",
+      "bullet_points": []
+    },
+    "gymarc": {
+      "name": "GymArc",
+      "project_link": "",
+      "github_link": "",
+      "badges": ["React Native", "TypeScript", "WatermelonDB"],
+      "description": "A cross-platform mobile app designed for users to track their gym workouts, review past sessions, create workout templates and plans, and monitor their progress.",
+      "bullet_points": []
+    }
+  }
+}

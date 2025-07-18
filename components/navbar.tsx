@@ -18,7 +18,7 @@ export default function NavBar() {
           className={"cursor-pointer pr-1 font-bold"}
           onClick={() => router.push("/")}
         >
-          Khoa Dinh{" "}
+          Khoa Dinh
         </p>
         {currentRoute !== "/" && (
           <div className={"font-light"}>{`— ${currentRoute}`}</div>
@@ -27,13 +27,13 @@ export default function NavBar() {
       <div className={"font-light"}>
         <div className={"hidden sm:block"}>
           <button
-            className={`${currentRoute === "/projects" ? "" : "text-stone-400"} cursor-pointer pr-2 hover:text-stone-950 dark:hover:text-white`}
+            className={`${currentRoute === "/projects" ? "" : "text-stone-400"} cursor-pointer pr-2 select-none hover:text-stone-950 dark:hover:text-white`}
             onClick={() => router.push("/projects")}
           >
             projects
           </button>
           <button
-            className={`${currentRoute === "/resume" ? "" : "text-stone-400"} cursor-pointer hover:text-stone-950 dark:hover:text-white`}
+            className={`${currentRoute === "/resume" ? "" : "text-stone-400"} cursor-pointer select-none hover:text-stone-950 dark:hover:text-white`}
             onClick={() => router.push("/resume")}
           >
             resume
