@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import * as motion from "motion/react-client";

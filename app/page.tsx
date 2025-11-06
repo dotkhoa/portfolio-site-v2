@@ -1,7 +1,5 @@
-export const runtime = "edge";
-
-import Image from "next/image";
 import * as motion from "motion/react-client";
+import Image from "next/image";
 
 export default function MainPage() {
   return (

@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import ProjectCard from "@/components/project-card";
 import projectsData from "@/projects.json";
 
