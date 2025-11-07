@@ -1,26 +1,16 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 import Link from "next/link";
+import { ThemeToggleButton } from "./theme-toggle-button";
 
 export default function Footer() {
-  const { setTheme, resolvedTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
-  };
-
   return (
     <div
       className={
         "mx-auto mt-10 flex w-full max-w-screen-md items-center justify-between px-4"
       }
     >
-      <Button variant={"outline"} size={"icon"} onClick={toggleTheme}>
-        {resolvedTheme === "dark" ? <Moon /> : <Sun />}
-      </Button>
+      {<ThemeToggleButton />}
       <div className={"grid justify-items-end"}>
         <div className={"flex"}>
           <div className={"pr-1"}>Email –</div>
