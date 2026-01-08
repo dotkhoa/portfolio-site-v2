@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import { startTransition } from "react";
 import HamburgerMenu from "./ui/hamburger-menu";
 
 export default function NavBar() {
@@ -16,7 +17,7 @@ export default function NavBar() {
       <div className={"flex"}>
         <p
           className={"cursor-pointer pr-1 font-bold"}
-          onClick={() => router.push("/")}
+          onClick={() => startTransition(() => router.push("/"))}
         >
           Khoa Dinh
         </p>
@@ -28,13 +29,13 @@ export default function NavBar() {
         <div className={"hidden sm:block"}>
           <button
             className={`${currentRoute === "/projects" ? "" : "text-stone-400"} cursor-pointer pr-2 select-none hover:text-stone-950 dark:hover:text-white`}
-            onClick={() => router.push("/projects")}
+            onClick={() => startTransition(() => router.push("/projects"))}
           >
             projects
           </button>
           <button
             className={`${currentRoute === "/resume" ? "" : "text-stone-400"} cursor-pointer select-none hover:text-stone-950 dark:hover:text-white`}
-            onClick={() => router.push("/resume")}
+            onClick={() => startTransition(() => router.push("/resume"))}
           >
             resume
           </button>
